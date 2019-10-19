@@ -190,7 +190,7 @@ room3.box.onClick = function() { // 클릭했을 때
 		room3.box.close() // close
 	} else if(room3.box.isClosed()) { // Closed 상태인 경우
 		room3.box.open() // open
-		printMessage("상자가 열리고 무언가 바닥에 떨어졌다.")
+		printMessage("상자가 열렸다.")
 	} else { 
 		// do nothing
 	}
@@ -237,7 +237,7 @@ room4.locker.onClick = function() {
 	printMessage("상자를 열려면 비밀번호가 필요해. \n 오늘 마지막 수업이 뭐였지?")
 	showKeypad("alphabet", "MUSIC" , function(){
 		room4.locker.unlock() 
-		printMessage("상자가 열렸다.")
+		printMessage("상자가 열리고 무언가 바닥에 떨어졌다")
 		game.move(room3)
 		room3.flower.show() 
 		playSound("mainbgm.wav")
